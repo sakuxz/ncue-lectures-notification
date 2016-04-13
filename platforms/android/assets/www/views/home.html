@@ -1,0 +1,22 @@
+<ion-view view-title="講座列表">
+	<ion-content>
+		<ion-refresher on-refresh="doRefresh()">
+
+		</ion-refresher>
+		{{v}}
+		<ion-list>
+			<ion-spinner icon="android"></ion-spinner>
+			<ion-item class="mes" style="display:none;">
+				<i class="icon ion-information-circled"></i>
+				<span>暫無活動</span>
+			</ion-item>
+			<ion-item ng-repeat="item in items | orderBy:'-timestamp' " ng-init="setDataList()" ng-href="#/detail/{{type}}/{{item.id}}" nav-transition="android">
+				<div>
+					<h2>{{item.title}}</h2>
+					<p>{{item.date}}</p>
+				</div>
+				<span class="badge badge-assertive" style="display:none">new</span>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

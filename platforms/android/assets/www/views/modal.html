@@ -1,0 +1,35 @@
+<ion-modal-view>
+	<ion-header-bar>
+		<a ng-click="closeModal()"><i class="ion-arrow-left-c" style="    font-size: 2.5em;
+    line-height: 1.2em;
+    padding: 0.5em;"></i></a>
+		<h1>{{tempItem.title}}</h1>
+	</ion-header-bar>
+	<ion-content scroll="false">
+		<div style="margin-top: 1.3em;margin-left: 1.6em;">
+			<span style="font-size: 3.8em;color: #FF0000;">{{tempItem.nowN}}</span><i style="margin: 2px;">/</i><span>{{tempItem.limitN}}</span>
+			<div style="color: #9C9C9C;margin-left: 0.2em;">報名人數</div>
+		</div>
+		<ul class="card_list">
+
+			<li style="-webkit-animation-delay:0.1s;animation-delay:0.1s;">
+				<div>活動日期</div>
+				<p>{{tempItem.date}}</p>
+			</li>
+			<li style="-webkit-animation-delay:0.25s;animation-delay:0.25s;">
+				<div>截止日期</div>
+				<p>{{tempItem.deadline}}</p>
+			</li>
+			<li style="-webkit-animation-delay:0.4s;animation-delay:0.4s;">
+				<div>主辦單位</div>
+				<p>{{tempItem.unit}}</p>
+			</li>
+			<li style="-webkit-animation-delay:0.6s;animation-delay:0.6s;">
+				<div>地點</div>
+				<p>{{tempItem.loc}}</p>
+			</li>
+
+		</ul>
+		<a class="button button-outline icon-right ion-chevron-right button-balanced" style="-webkit-animation-delay:0.8s;animation-delay:0.8s">報名頁面</a>
+	</ion-content>
+</ion-modal-view>
