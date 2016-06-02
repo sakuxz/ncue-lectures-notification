@@ -2,6 +2,7 @@
   "name": "ncue_lectures_notification",
   "version": "1.0.0",
   "description": "ncue_lectures_notification: An Ionic project",
+  "license": "MIT",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^1.3.3",
